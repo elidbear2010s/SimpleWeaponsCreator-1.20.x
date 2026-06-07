@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SimpleWeaponsCreator.MOD_ID);
 
-    public static final DeferredItem<Item> CRYSTALS = ITEMS.register("crystal",
+    public static final DeferredItem<Item> CRYSTAL = ITEMS.register("crystal",
             () -> new Item(new Item.Properties()));
 
 

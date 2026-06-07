@@ -48,7 +48,7 @@ public class SimpleWeaponsCreator {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.CRYSTALS);
+            event.accept(ModItems.CRYSTAL);
         }
 
     }
