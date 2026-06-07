@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "simpleweaponscreator:item/crystal"
+    "layer0": "elidbearswc:item/crystal"
   }
 }
