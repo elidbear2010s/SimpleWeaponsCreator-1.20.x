@@ -1,5 +1,6 @@
 package net.elidbear2010.simpleweaponscreator;
 
+import net.elidbear2010.simpleweaponscreator.block.ModBlocks;
 import net.elidbear2010.simpleweaponscreator.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -32,6 +33,7 @@ public class SimpleWeaponsCreator {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
