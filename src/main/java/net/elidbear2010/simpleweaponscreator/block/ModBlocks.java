@@ -2,9 +2,11 @@ package net.elidbear2010.simpleweaponscreator.block;
 
 import net.elidbear2010.simpleweaponscreator.SimpleWeaponsCreator;
 import net.elidbear2010.simpleweaponscreator.items.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -19,7 +21,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ROUGHCRYSTAL_BLOCK = registerBlock("roughcrystal_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final DeferredBlock<Block> CRYSTAL_ORE = registerBlock("crystal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

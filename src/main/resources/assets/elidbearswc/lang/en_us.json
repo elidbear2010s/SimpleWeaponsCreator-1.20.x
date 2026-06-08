@@ -1,7 +1,7 @@
 {
   "item.elidbearswc.crystal": "Crystal",
-
   "item.elidbearswc.roughcrystal": "RoughCrystal",
 
-  "block.elidbearswc.roughcrystal_block": "RoughCrystal Block"
+  "block.elidbearswc.roughcrystal_block": "RoughCrystal Block",
+  "block.elidbearswc.crystal_ore": "Crystal ore"
 }
