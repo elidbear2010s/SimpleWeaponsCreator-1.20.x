@@ -51,6 +51,10 @@ public class SimpleWeaponsCreator {
             event.accept(ModItems.CRYSTAL);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ROUGHCRYSTAL);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
