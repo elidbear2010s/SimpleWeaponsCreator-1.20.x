@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cude_all",
+  "textures": {
+    "all": "elidbearswc:block/roughcrystal_block"
+  }
+}
