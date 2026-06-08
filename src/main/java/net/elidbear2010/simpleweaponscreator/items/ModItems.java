@@ -12,6 +12,9 @@ public class ModItems {
     public static final DeferredItem<Item> CRYSTAL = ITEMS.register("crystal",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> UNCUTCRYSTAL = ITEMS.register("crystal",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
