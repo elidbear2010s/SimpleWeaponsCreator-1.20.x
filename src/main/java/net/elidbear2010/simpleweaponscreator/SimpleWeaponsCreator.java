@@ -51,10 +51,11 @@ public class SimpleWeaponsCreator {
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.CRYSTAL);
+            event.accept(ModItems.ROUGHCRYSTAL);
         }
 
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ROUGHCRYSTAL);
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ROUGHCRYSTAL_BLOCK);
         }
 
     }
