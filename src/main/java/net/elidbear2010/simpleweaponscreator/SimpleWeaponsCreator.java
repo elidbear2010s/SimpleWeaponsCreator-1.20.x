@@ -61,6 +61,7 @@ public class SimpleWeaponsCreator {
             event.accept(ModBlocks.ROUGHCRYSTAL_BLOCK);
             event.accept(ModBlocks.CRYSTAL_BLOCK);
             event.accept(ModBlocks.CRYSTAL_ORE);
+            event.accept(ModBlocks.DEEPSLATECRYSTAL_ORE);
         }
 
     }

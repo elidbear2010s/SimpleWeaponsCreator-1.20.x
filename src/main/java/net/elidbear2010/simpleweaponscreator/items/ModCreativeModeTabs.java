@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CRYSTAL_BLOCK);
                         output.accept(ModBlocks.ROUGHCRYSTAL_BLOCK);
                         output.accept(ModBlocks.CRYSTAL_ORE);
+                        output.accept(ModBlocks.DEEPSLATECRYSTAL_ORE);
 
 
                     }).build());
