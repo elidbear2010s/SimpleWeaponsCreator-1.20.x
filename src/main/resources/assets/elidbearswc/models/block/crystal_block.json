@@ -3,5 +3,5 @@
   "textures": {
     "all": "elidbearswc:block/crystal_block"
   },
-  "render_type": "minecraft:cutout"
+  "render_type": "minecraft:translucent"
 }
