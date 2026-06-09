@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -24,8 +25,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
     public static final DeferredBlock<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+            () -> new TransparentBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)
+                    .strength(2f)));
 
     public static final DeferredBlock<Block> CRYSTAL_ORE = registerBlock("crystal_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
