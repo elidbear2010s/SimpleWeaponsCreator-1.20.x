@@ -21,14 +21,18 @@ public class ModBlocks {
             DeferredRegister.createBlocks(SimpleWeaponsCreator.MOD_ID);
 
     public static final DeferredBlock<Block> ROUGHCRYSTAL_BLOCK = registerBlock("roughcrystal_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+            () -> new TransparentBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .sound(SoundType.AMETHYST)
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
             () -> new TransparentBlock(BlockBehaviour.Properties.of()
                     .noOcclusion()
                     .sound(SoundType.AMETHYST)
-                    .strength(2f)));
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> CRYSTAL_ORE = registerBlock("crystal_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
