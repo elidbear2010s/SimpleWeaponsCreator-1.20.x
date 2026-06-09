@@ -23,6 +23,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
+    public static final DeferredBlock<Block> CRYSTAL_BLOCK = registerBlock("crystal_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
     public static final DeferredBlock<Block> CRYSTAL_ORE = registerBlock("crystal_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
