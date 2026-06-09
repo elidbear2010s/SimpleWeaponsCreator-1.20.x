@@ -29,7 +29,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> SIMPLEWEAPONSCREATOR_BLOCKS_TAB = CREATIVE_MODE_TAB.register("simpleweaponscreator_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRYSTAL_BLOCK))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(SimpleWeaponsCreator.MOD_ID, "simpleweaponscreator_items_tab"))
-                    .title(Component.translatable("creativetab.simpleweaponscreator.simpleweaponscreator_items"))
+                    .title(Component.translatable("creativetab.simpleweaponscreator.simpleweaponscreator_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.CRYSTAL_BLOCK);
                         output.accept(ModBlocks.ROUGHCRYSTAL_BLOCK);

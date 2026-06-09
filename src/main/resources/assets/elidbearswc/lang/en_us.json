@@ -4,5 +4,8 @@
 
   "block.elidbearswc.roughcrystal_block": "RoughCrystal Block",
   "block.elidbearswc.crystal_block": "Crystal Block",
-  "block.elidbearswc.crystal_ore": "Crystal ore"
+  "block.elidbearswc.crystal_ore": "Crystal ore",
+
+  "creativetab.elidbearswc.simpleweaponscreator_items": "SWC Items",
+  "creativetab.elidbearswc.simpleweaponscreator_blocks": "SWC Blocks"
 }
